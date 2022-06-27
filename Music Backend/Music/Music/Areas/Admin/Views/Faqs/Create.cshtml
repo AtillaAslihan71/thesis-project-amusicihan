@@ -1,0 +1,34 @@
+﻿@model FaqCreateViewModel
+@{
+    ViewData["Title"] = "Admin - Faqs - Create";
+    ViewData["Active-FAQS"] = "active";
+}
+
+<div class="rightSide">
+    <div class="admin-detail">
+        <div id="first" class="content">
+            <div class="header">
+                <p>Faq - Create</p>
+            </div>
+
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            <form method="post" asp-controller="Faqs" asp-action="Create">
+
+                <label asp-for="Question">Question</label><br>
+                <input asp-for="Question" required autocomplete="off">
+                <span class="text-danger" asp-validation-for="Question"></span>
+                <br>
+
+                <label asp-for="Answer">Answer</label><br>
+                <input asp-for="Answer" required autocomplete="off">
+                <span class="text-danger" asp-validation-for="Answer"></span>
+                <br>
+                
+                <button type="submit">Create</button>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+

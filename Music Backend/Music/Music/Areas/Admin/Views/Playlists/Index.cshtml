@@ -1,0 +1,54 @@
+﻿@model PlaylistViewModel
+@{
+    ViewData["Title"] = "Index";
+    ViewData["Active-Playlists"] = "active";
+    int count = 1;
+}
+
+<div class="rightSide">
+    <div class="admin-detail">
+        <div id="first" class="content">
+            <div class="header admin-create-area">
+                <div class="admin-title"><p>Playlists</p></div>
+            </div>
+
+
+
+            <table class="text-center">
+                <tr style="border-bottom:1px solid white ;">
+                    <th>#</th>
+                    <th style="width: 580px;">Title</th>
+                    <th style="width: 580px;">Singer</th>
+                    <th style="width: 580px;">Genre</th>
+                    <th style="width: 580px;">Link</th>
+                    <th style="width: 580px;">Author</th>
+                </tr>
+
+                @foreach (var music in Model.Musics)
+                {
+                    @foreach (var genre in Model.Genres.Where(g => g.Id == @music.GenreId))
+                    {
+                        <tr>
+                            <td>@count</td>
+                            <td style="width: 580px;">@music.Title</td>
+                            <td style="width: 580px;">@music.Singer</td>
+                            <td style="width: 580px;">@genre.Name</td>
+                            <td style="width: 580px;"><a style="color: gray; text-decoration: underline;" href="@music.Link">Click</a></td>
+                            <td style="width: 580px;">@music.Author</td>
+                            <td class="d-flex">
+                                <a class="btn btn-primary" asp-controller="Playlists" asp-action="Delete" asp-route-id="@music.Id"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+
+                        count++;
+                    }
+                }
+
+
+            </table>
+
+
+
+        </div>
+    </div>
+</div>

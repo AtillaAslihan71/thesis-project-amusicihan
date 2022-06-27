@@ -1,0 +1,42 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+    int count = 1;
+}
+
+
+<section id="about">
+    <div class="container about-box">
+        <img src="~/assets/image/Rectangle.png" alt="">
+        <div class="text">
+            <p>Chat with people who are listening to the same song</p>
+            <p>Connect with people who love the same song, share how it makes you feel, or just enjoy a moment together</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="faq">
+    @if (Model.Faqs.Count!=0)
+    {
+        <div class="container">
+            <div class="header">
+                <h3>FAQ</h3>
+            </div>
+            <div class="center">
+            
+                @foreach (var item in Model.Faqs)
+                {
+                    <section id="item-@count">
+                        <a href="#item-@count">@item.Question </a>
+                        <p>@item.Answer</p>
+                    </section>
+                    count++;
+                }
+            
+            </div>
+        </div>
+    }
+</section>

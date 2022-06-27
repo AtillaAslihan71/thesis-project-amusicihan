@@ -1,0 +1,33 @@
+﻿@model GenreUpdateViewModel
+@{
+    ViewData["Title"] = "Admin - Genre - Update";
+    ViewData["Active-Genres"] = "active";
+}
+
+<div class="rightSide">
+    <div class="admin-detail">
+        <div id="first" class="content">
+            <div class="header">
+                <p>Genres - Update</p>
+            </div>
+
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            <form method="post" asp-controller="Genres" asp-action="Update" enctype="multipart/form-data">
+
+                <label asp-for="Name">Genre name</label><br>
+                <input asp-for="Name" required autocomplete="off">
+                <span class="text-danger" asp-validation-for="Name"></span>
+                <br>
+
+                <label asp-for="Image">Genre image</label><br>
+                <input asp-for="Image"  autocomplete="off">
+                <span class="text-danger" asp-validation-for="Image"></span>
+                <br>
+
+                <button type="submit">Update</button>
+            </form>
+
+
+        </div>
+    </div>
+</div>

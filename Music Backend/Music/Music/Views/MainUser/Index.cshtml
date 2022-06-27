@@ -1,0 +1,36 @@
+﻿@model MainUserViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section id="genres-main">
+    <div class="container">
+        <div class="row">
+            <div class="cards">
+                
+                @foreach (var usergenre in @Model.UserGenres.Where(ug=>ug.UserId==@Model.User.Id))
+                {
+                    @foreach (var item in @Model.Genres.Where(g => g.Id==@usergenre.GenreId))
+                    {
+                        
+                        <div class="col-sm-4">
+                            <a asp-controller="MainUser" asp-action="Playlist" asp-route-id="@item.Id">
+                                <div class="card">
+
+                                    <img src="~/assets/image/@item.Image" alt="@item.Name">
+                                    <span>@item.Name</span>
+
+                                </div>
+                            </a>
+                            </div>
+                        
+                    }
+                }
+                
+                
+
+                
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,42 @@
+﻿   
+    @model IEnumerable<TermsConditions>
+    @{
+        ViewData["Title"] = "Admin - Terms & Conditions";
+        ViewData["Active-TermsCond"] = "active";
+    }
+
+    <div class="rightSide">
+        <div class="admin-detail">
+            <div id="first" class="content">
+                <div class="header admin-create-area">
+                    <div class="admin-title"><p>Terms & Conditions</p></div>
+                    <div class="admin-create-btn"><a asp-controller="TermsConditions" asp-action="Create">Create</a></div>
+                </div>
+
+            
+            
+                <table class="text-center">
+                    <tr style="border-bottom:1px solid white ;">
+                        <th style="width: 580px;">Terms & Conditions</th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td style="width: 580px;"><div style="height: 300px; overflow-x: hidden;">@item.Text</div></td>
+                            <td class="d-flex">
+                                <a class="btn btn-primary" asp-controller="TermsConditions" asp-action="Update" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i></a>
+                                <a class="btn btn-primary" asp-controller="TermsConditions" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        
+                    }
+
+
+                </table>
+            
+
+
+            </div>
+        </div>
+    </div>

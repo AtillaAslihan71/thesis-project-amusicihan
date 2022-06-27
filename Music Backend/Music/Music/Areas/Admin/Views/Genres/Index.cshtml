@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Genre>
+@{
+    ViewData["Title"] = "Admin - Genres";
+    ViewData["Active-Genres"] = "active";
+    int count = 1;
+}
+
+<div class="rightSide">
+    <div class="admin-detail">
+        <div id="first" class="content">
+            <div class="header admin-create-area">
+                <div class="admin-title"><p>Genres</p></div>
+                <div class="admin-create-btn"><a asp-controller="Genres" asp-action="Create">Create</a></div>
+            </div>
+
+
+
+            <table class="text-center">
+                <tr style="border-bottom:1px solid white ;">
+                    <th>#</th>
+                    <th style="width: 580px;">Genre Name</th>
+                    <th style="width: 580px;">Genre Image</th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@count</td>
+                        <td style="width: 580px;">@item.Name</td>
+                        <td style="width: 580px; padding-top: 3px"><img width="100" src="~/assets/image/@item.Image"/></td>
+                        <td class="d-flex">
+                            <a class="btn btn-primary" asp-controller="Genres" asp-action="Update" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i></a>
+                            <a class="btn btn-primary" asp-controller="Genres" asp-action="Delete" asp-route-id="@item.Id"><i class="bi bi-trash-fill"></i></a>
+                        </td>
+                    </tr>
+
+                    count++;
+                }
+
+
+            </table>
+
+
+
+        </div>
+    </div>
+</div>

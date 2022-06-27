@@ -1,0 +1,33 @@
+﻿@model GenreCreateViewModel
+@{
+    ViewData["Title"] = "Admin - Genre - Create";
+    ViewData["Active-Genres"] = "active";
+}
+
+<div class="rightSide">
+    <div class="admin-detail">
+        <div id="first" class="content">
+            <div class="header">
+                <p>Genres - Create</p>
+            </div>
+
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            <form method="post" asp-controller="Genres" asp-action="Create" enctype="multipart/form-data">
+
+                <label asp-for="Name">Genre name</label><br>
+                <input asp-for="Name" required autocomplete="off">
+                <span class="text-danger" asp-validation-for="Name"></span>
+                <br>
+
+                <label asp-for="Image">Genre image</label><br>
+                <input asp-for="Image" required autocomplete="off">
+                <span class="text-danger" asp-validation-for="Image"></span>
+                <br>
+                
+                <button type="submit">Create</button>
+            </form>
+
+
+        </div>
+    </div>
+</div>

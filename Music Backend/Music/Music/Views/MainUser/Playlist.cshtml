@@ -1,0 +1,136 @@
+﻿@model MainUserViewModel
+@{
+    ViewData["Title"] = "Playlist";
+    int likecount = 0;
+    int counter = 1;
+}
+
+<section id="music-detail">
+    <div class="container">
+        <div class="row">
+            <div class="top">
+                <div class="col-md-8 col-12">
+                    <div class="image">
+                            <img src="~/assets/image/@Model.Genre.Image" alt="@Model.Genre.Name">
+                    </div>
+                    <div class="people-likes">
+                        <p>
+                            @foreach (var usergenre in @Model.UserGenres.Where(ug=>ug.GenreId==@Model.Genre.Id))
+                            {
+                                likecount++;
+                            }
+                            
+                           @likecount people likes
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 w">
+                    @*<a href="">
+                        <div class="favorite">
+                            <span>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="25" height="25" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_13_128" transform="scale(0.0111111)" />
+                                        </pattern>
+                                        <image id="image0_13_128" width="90" height="90" xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
+                                Like
+                            </span>
+                        </div>
+                    </a>*@
+                    <a onfocus="modal2()" href="">
+                        <div class="add-music">
+                            <span>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="25" height="25" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_13_129" transform="scale(0.0111111)" />
+                                        </pattern>
+                                        <image id="image0_13_129" width="90" height="90" xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
+
+
+                                Add Music
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="header">
+                        <h3>Add a music</h3>
+                    </div>
+                    
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                    <form  method="post" asp-controller="MainUser" asp-action="AddMusic">
+                        <div class="inputs">
+                            <label asp-for="Title">Title</label>
+                            <input required autocomplete="off" asp-for="Title">
+                            <span class="text-danger" asp-validation-for="Title"></span>
+
+                            <label asp-for="Singer">Singer</label>
+                            <input required autocomplete="off" asp-for="Singer">
+                            <span class="text-danger" asp-validation-for="Singer"></span>
+
+                            <label asp-for="Link">Link</label>
+                            <input required autocomplete="off" asp-for="Link">
+                            <span class="text-danger" asp-validation-for="Link"></span>
+
+
+
+                            <input type="hidden" asp-for="Author">
+                            <input type="hidden" asp-for="GenreId" value="@Model.Genre.Id">
+
+                            <div class="save-btn">
+                                <button type="submit">
+                                    <div class="save">
+                                        Save
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="table">
+    <div class="container">
+        <div class="row">
+            <table>
+                <tr style="border-bottom:1px solid white ;">
+                    <th>#</th>
+                    <th>TITLE</th>
+                    <th>SINGER</th>
+                    <th>WHO</th>
+                    <th>LINK</th>
+                </tr>
+                @foreach (var item in Model.Musics.Where(m=>m.GenreId==@Model.Genre.Id))
+                {
+                    <tr>
+                        <td>@counter</td>
+                        <td>@item.Title</td>
+                        <td>@item.Singer</td>
+                        <td>@item.Author</td>
+                        <td><a target="_blank" href="@item.Link">Click</a></td>
+                    </tr>
+
+                    counter++;
+                }
+            </table>
+        </div>
+    </div>
+</section>
+

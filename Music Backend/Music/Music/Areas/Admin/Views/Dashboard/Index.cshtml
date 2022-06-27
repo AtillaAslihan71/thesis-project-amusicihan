@@ -1,0 +1,24 @@
+﻿@model DashboardViewModel
+@{
+    ViewData["Title"] = "Admin - Dashboard";
+    ViewData["Active-Main"] = "active";
+}
+
+<div class="rightSide" >
+    <div class="admin-main">
+                    
+        <div class="counter-area">
+            <div class="counter-title">
+                Users
+            </div>
+            <div class="counter">@Model.UsersCount</div>
+        </div>
+        <div class="counter-area">
+            <div class="counter-title">
+                Playlists
+            </div>
+            <div class="counter">@Model.MusicCount</div>
+        </div>
+    </div>
+</div>
+

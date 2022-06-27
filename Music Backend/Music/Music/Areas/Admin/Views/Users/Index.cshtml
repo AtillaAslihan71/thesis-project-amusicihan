@@ -1,0 +1,46 @@
+﻿@model UserViewModel
+@{
+    ViewData["Title"] = "Index";
+    ViewData["Active-Users"] = "active";
+    int count = 1;
+}
+
+<div class="rightSide">
+    <div class="admin-detail">
+        <div id="first" class="content">
+            <div class="header admin-create-area">
+                <div class="admin-title"><p>Users</p></div>
+            </div>
+
+
+
+            <table class="text-center">
+                <tr style="border-bottom:1px solid white ;">
+                    <th>#</th>
+                    <th style="width: 580px;">Name</th>
+                    <th style="width: 580px;">Surname</th>
+                    <th style="width: 580px;">Username</th>
+                    <th style="width: 580px;">Email</th>
+                </tr>
+
+                @foreach (var item in Model.Users)
+                {
+                    <tr>
+                        <td>@count</td>
+                        <td style="width: 580px;">@item.Name</td>
+                        <td style="width: 580px;">@item.Surname</td>
+                        <td style="width: 580px;">@item.UserName</td>
+                        <td style="width: 580px;">@item.Email</td>
+                    </tr>
+
+                    count++;
+                }
+
+
+            </table>
+
+
+
+        </div>
+    </div>
+</div>

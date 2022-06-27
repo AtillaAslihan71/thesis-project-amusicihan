@@ -1,0 +1,13 @@
+main user page 2                Full
+main user page                  Full
+Register                        Full
+Login                           Full
+Index
+Registration 2                  Full
+Sending verification            Full
+Terms condition                 Full
+User profile
+Forget password                 Full
+Reset password                  Full
+Register successful             Full
+Email confirmation              Full

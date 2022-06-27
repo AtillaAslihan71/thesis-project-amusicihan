@@ -1,0 +1,1135 @@
+@font-face {
+    font-family: "Bell MT";
+    src: url("//db.onlinewebfonts.com/t/bb25f84423b9515a1d475d02d2de6462.eot");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2941AB !important;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+/* Home */
+
+header {
+    padding: 2%;
+}
+
+.roww {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-login-register {
+    display: flex;
+    color: white;
+}
+
+    .header-login-register p {
+        padding: 5px;
+    }
+
+    .header-login-register a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+        font-family: "Century Gothic";
+    }
+
+.header-login {
+    display: flex;
+}
+
+    .header-login img {
+        width: 51px;
+        height: 37px;
+    }
+
+
+
+#about {
+    padding-top: 5%;
+}
+
+    #about .container {
+        text-align: center;
+    }
+
+    #about .about-box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #about .about-box .text {
+        position: absolute;
+        color: rgba(255,255,255,0.6);
+        font-weight: bold;
+        padding: -50px;
+        font-family: "Century Gothic";
+        font-size: 30px;
+        top: 42%;
+        left: 20%;
+        max-width: 900px;
+    }
+
+@media only screen and (max-width: 1200px) {
+    #about img {
+        width: 100%;
+    }
+}
+
+
+#faq {
+    padding-top: 8%;
+    padding-bottom: 3%;
+}
+
+    #faq .header {
+        color: white;
+        text-align: center;
+        padding-bottom: 4%;
+        font-family: "Century Gothic";
+    }
+
+    #faq .center {
+        width: 600px;
+        margin: auto;
+    }
+
+    #faq section a {
+        background: #3B57D0;
+        color: #FFF;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        font-size: 1.3em;
+        letter-spacing: 3px;
+        overflow: hidden;
+        border-radius: 18px;
+        padding-left: 3%;
+        font-family: "Century Gothic";
+    }
+
+    #faq section p {
+        padding: 10px;
+        font-family: "Century Gothic";
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        color: #fff;
+        overflow: hidden;
+        letter-spacing: 2px;
+        transition: 2s;
+    }
+
+    #faq section:target p {
+        height: 100%;
+        opacity: 1;
+        padding: 20px;
+    }
+
+
+
+
+
+
+
+footer .icons img {
+    width: 30px;
+}
+
+footer .text {
+    display: flex;
+}
+
+    footer .text p {
+        color: #8697E1;
+    }
+
+    footer .text a {
+        text-decoration: none;
+    }
+
+
+/* End Home */
+
+
+
+/* Register */
+#register {
+    text-align: -webkit-center;
+    font-family: Century Gothic;
+    padding-bottom: 5%;
+}
+
+header .register {
+    text-align: center;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 444px) {
+    header .register img {
+        width: 100%;
+    }
+}
+
+header hr {
+    color: #A7A7A7;
+    height: 1px !important;
+}
+
+footer hr {
+    color: #A7A7A7;
+    height: 1px;
+}
+
+#register .register {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    max-width: 450px;
+}
+
+#register form {
+    display: grid;
+    text-align: start;
+}
+
+    #register form input {
+        margin-top: 1%;
+    }
+
+    #register form label {
+        margin-top: 2%;
+    }
+
+#register input {
+    background-color: #5769B9;
+    border: 0;
+    height: 40px;
+    color: white;
+}
+
+#register form a {
+    text-align: center;
+}
+
+#register .header h4 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#register form .registerbtn {
+    background: transparent !important;
+    border: 0 !important;
+    color: #fff;
+}
+
+#register form .register-btn {
+    border: 0.5px solid #98B0FF;
+    border-radius: 28px;
+    padding: 2%;
+    margin: 5% 0 2% 0;
+}
+
+#register .login-btn {
+    border: 0.5px solid #98B0FF;
+    border-radius: 28px;
+    padding: 2%;
+    margin: 1% 0 2% 0;
+    max-width: 350px;
+}
+
+#register a {
+    text-decoration: none;
+    color: white;
+}
+
+#register .links {
+    text-align: -webkit-center;
+}
+/* End Register */
+
+
+/* Login */
+header .login {
+    text-align: center;
+}
+
+#login {
+    text-align: -webkit-center;
+    font-family: Century Gothic;
+    padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 444px) {
+    header .login img {
+        width: 100%;
+    }
+}
+
+#login a {
+    text-decoration: none;
+    color: white;
+}
+
+#login form a {
+    text-align: center;
+}
+
+#login .header h4 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#login .login {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    max-width: 450px;
+}
+
+#login form .loginbtn {
+    border: 0;
+    background: transparent;
+    color: #fff;
+}
+
+#login form {
+    display: grid;
+    text-align: start;
+}
+
+    #login form input {
+        margin-top: 1%;
+    }
+
+    #login form label {
+        margin-top: 2%;
+    }
+
+#login input {
+    background-color: #5769B9;
+    border: 0;
+    height: 40px;
+    color: white;
+}
+
+#login form .login-btn {
+    border: 0.5px solid #98B0FF;
+    border-radius: 28px;
+    padding: 2%;
+    margin: 5% 0 2% 0;
+    max-width: 200px;
+    text-align: center;
+}
+
+#login .register-btn {
+    border: 0.5px solid #98B0FF;
+    border-radius: 28px;
+    padding: 2%;
+    margin: 1% 0 2% 0;
+    max-width: 350px;
+}
+
+#login .links {
+    text-align: -webkit-center;
+}
+
+#login .lgn-a {
+    color: #35CFFF;
+    font-size: 16px;
+    width: 100%;
+    padding-top: 4%;
+    text-align: start;
+}
+
+#login .lgn .lg {
+    width: 100%;
+    text-align: -webkit-right;
+}
+
+#login .lgn {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0 5% 0;
+}
+/* End Login */
+
+
+/* terms-condition */
+#terms {
+    display: flex;
+    font-size: 32px;
+    font-family: Century Gothic;
+}
+
+    #terms .title {
+        padding-left: 6%;
+        padding-top: 0.5rem;
+    }
+
+#text {
+    font-size: 32px;
+    font-weight: 400;
+    padding-left: 4%;
+    font-family: Century Gothic;
+}
+
+    #terms h4, #text h4 {
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    #text p {
+        padding-top: 2%;
+    }
+/* End terms-condition */
+
+
+
+
+
+/* Registration 2 */
+#genres {
+    color: white;
+    font-family: Century Gothic;
+    padding-bottom: 5%;
+}
+
+    #genres .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #genres .card {
+        background-color: #5769B9;
+        height: 104px;
+        font-size: 24px;
+        border-radius: 22px;
+        /* border: 3px solid #31EB13; */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 4%;
+    }
+
+        #genres .card .checkbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+        }
+
+            #genres .card .checkbox:checked ~ .inner {
+                border-color: #31EB13;
+            }
+
+        #genres .card .inner {
+            background-color: #5769B9;
+            width: 100%;
+            height: 100%;
+            font-size: 24px;
+            border-radius: 22px;
+            border: 3px solid transparent;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-left: 3%;
+            margin-right: 3%;
+            margin-top: 0%;
+            padding-top: 4%;
+            cursor: pointer;
+        }
+
+    /*#genres .col-md-6 :hover {
+    border: 3px solid #31EB13;
+}*/
+    /* #genres .col-md-6{
+    border: 3px solid #31EB13;
+} */
+    /* #genres .col-md-6 :active {
+    border: 3px solid #31EB13;
+} */
+    #genres .title h4 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    #genres .next .bt {
+        border: 0.5px solid #98B0FF;
+        border-radius: 28px;
+        text-align: center;
+        width: 100px;
+        height: 50px;
+        align-items: center;
+        padding-top: 10%;
+    }
+
+    #genres .next .next-btn .nextbtn {
+        background: transparent !important;
+        border: 0 !important;
+        color: #fff;
+    }
+
+@media only screen and (min-width: 450px) and (max-width: 992px) {
+    #genres .next .bt {
+        padding-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 450px) {
+    #genres .next .bt {
+        padding-top: 1%;
+        border: 0.5px solid #98B0FF;
+        border-radius: 28px;
+        text-align: center;
+        width: 70px;
+        height: 35px;
+        align-items: center;
+    }
+}
+
+#genres .next {
+    justify-content: end;
+    text-align: -webkit-right;
+    padding-top: 3%;
+}
+
+#genres .sss {
+    justify-content: end;
+}
+
+#genres .next a {
+    text-decoration: none;
+    color: white;
+}
+/* End Registration 2 */
+
+
+
+
+/* Sending verification */
+#steps .header {
+    text-align: center;
+    color: white;
+    font-family: Century Gothic;
+}
+
+    #steps .header h3 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+
+#steps .steps {
+    padding-top: 5%;
+}
+
+#steps .header p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#steps .steps .step {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding-left: 32%;
+    padding-top: 1%;
+}
+
+    #steps .steps .step p {
+        padding-left: 2%;
+        padding-top: 4px;
+    }
+
+#steps .step span {
+    position: absolute;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    #steps .steps .step {
+        display: flex;
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        padding-left: 22%;
+        padding-top: 1%;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    #steps .steps .step {
+        display: flex;
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        padding-left: 15%;
+        padding-top: 1%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 400px) {
+    #steps .steps .step {
+        display: flex;
+        color: white;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        padding-left: 15%;
+        padding-top: 1%;
+    }
+}
+
+#steps img {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+#steps .say {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+
+/* End Sending verification */
+
+
+
+
+
+/* Main User Page */
+#genres-main {
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+    #genres-main img {
+        object-fit: cover;
+    }
+
+    #genres-main .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        #genres-main .cards .card {
+            border: 0;
+            background: none;
+            text-align: center;
+            color: white;
+            margin: 8%;
+            font-size: 28px;
+            font-weight: 400;
+            font-family: "Bell MT";
+            justify-content: center;
+            align-items: center;
+            line-height: 26px;
+            initial-letter: 11%;
+        }
+
+            #genres-main .cards .card span {
+                position: absolute;
+            }
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    #genres-main img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 576px) {
+    #genres-main img {
+        width: 100%;
+    }
+
+    #genres-main .cards {
+        justify-content: center;
+    }
+}
+/* End Main User Page */
+
+
+
+
+/* Main User Page 2*/
+#music-detail {
+    font-family: "Century Gothic";
+}
+
+    #music-detail .top {
+        display: flex;
+        color: white;
+        align-items: end;
+        flex-wrap: wrap;
+    }
+
+        #music-detail .top .col-md-8, #music-detail .top .col-md-4 {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        #music-detail .top .col-md-4 {
+            justify-content: end;
+        }
+
+        #music-detail .top .col-md-8 .people-likes {
+            padding-left: 5%;
+        }
+
+        #music-detail .top a {
+            color: white;
+            text-decoration: none;
+            margin-left: 6%;
+            margin-right: 6%;
+        }
+
+        #music-detail .top .favorite {
+            border: 1px solid #98B0FF;
+            border-radius: 28px;
+            width: 101px;
+            height: 48px;
+            text-align: center;
+            padding-top: 9%;
+        }
+
+        #music-detail .top .add-music {
+            border: 1px solid #98B0FF;
+            border-radius: 28px;
+            width: 180px;
+            text-align: center;
+            height: 48px;
+            padding-top: 5%;
+        }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #music-detail .top .favorite {
+        width: 80px;
+        height: 48px;
+        padding-top: 9%;
+    }
+
+    #music-detail .top .add-music {
+        width: 150px;
+        height: 48px;
+        padding-top: 5%;
+    }
+    /* #music-detail .top .w{
+        padding-top: 5%;
+    } */
+    #music-detail .top a {
+        color: white;
+        text-decoration: none;
+        margin-left: 2%;
+        margin-right: 1%;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+    #music-detail .top .col-md-4 {
+        padding-top: 5%;
+    }
+
+    #music-detail .top .image img {
+        width: 70%;
+    }
+
+    #music-detail .top .image {
+        text-align: center;
+    }
+
+    #music-detail .top .people-likes {
+        text-align: center;
+    }
+
+    #music-detail .top .col-md-8 {
+        display: block;
+    }
+
+        #music-detail .top .col-md-8 .people-likes {
+            padding-top: 5%;
+        }
+
+    #music-detail .top .col-md-4 {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+    #music-detail .top .favorite {
+        border: 1px solid #98B0FF;
+        border-radius: 28px;
+        width: 70px;
+        height: 38px;
+        text-align: center;
+        padding-top: 9%;
+    }
+
+    #music-detail .top .add-music {
+        border: 1px solid #98B0FF;
+        border-radius: 28px;
+        width: 120px;
+        text-align: center;
+        height: 38px;
+        padding-top: 5%;
+    }
+
+    #music-detail .top .col-md-4 {
+        justify-content: center;
+    }
+}
+
+#table {
+    padding-top: 8%;
+    padding-bottom: 15%;
+    font-family: "Century Gothic";
+    color: white;
+}
+
+    #table table {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+        #table table a {
+            color: white;
+        }
+
+        #table table td {
+            padding-top: 2%;
+        }
+
+        #table table th {
+            padding-bottom: 1%;
+        }
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50% !important;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: end;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+#myModal {
+    font-family: Century Gothic;
+    letter-spacing: 2px;
+}
+
+    #myModal .inputs {
+        display: grid;
+        line-height: 35px;
+        padding: 0 10%;
+    }
+
+    #myModal input {
+        background-color: #5769B9;
+        border: 0px;
+        color: white;
+    }
+
+    #myModal .save-btn {
+        text-align: -webkit-right;
+        padding-top: 5%;
+    }
+
+    #myModal .inputs .save {
+        border: 0.5px solid #98B0FF;
+        width: 15%;
+        text-align: center;
+        border-radius: 28px;
+    }
+
+    #myModal .inputs a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #myModal .modal-content {
+        background-color: #001369;
+        color: white;
+    }
+
+    #myModal .header h3 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    #myModal .header h3 {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    #myModal .inputs .save {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 576px) {
+    #myModal .header h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #myModal .inputs .save {
+        width: 100%;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80% !important;
+    }
+
+    #myModal .inputs label {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 350px) {
+    #myModal input {
+        width: 100%;
+    }
+}
+/* End Main User Page 2 */
+
+
+
+
+
+/* User Profile */
+#user-profile {
+    font-family: Century Gothic;
+    display: flex;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    #user-profile {
+        font-family: Century Gothic;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 576px) {
+    #user-profile {
+        font-family: Century Gothic;
+        display: block;
+    }
+
+        #user-profile .rightSide label {
+            font-size: 19px;
+        }
+
+        #user-profile .rightSide tr {
+            font-size: 15px;
+        }
+
+        #user-profile .rightSide p, #user-profile .rightSide span {
+            font-size: 15px !important;
+            text-align: center;
+        }
+
+        #user-profile .rightSide span {
+        }
+
+        #user-profile .email {
+        }
+
+        #user-profile .username,
+        #user-profile .name,
+        #user-profile .email,
+        #user-profile .surname {
+            margin-top: 5% !important;
+            overflow: hidden;
+        }
+
+        #user-profile .save {
+            border: 0.5px solid #98B0FF;
+            width: 30%;
+            text-align: center;
+            border-radius: 28px;
+            font-size: 80%;
+        }
+}
+
+#user-profile a {
+    text-decoration: none;
+}
+
+#user-profile li {
+    color: white;
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60.43px;
+}
+
+#user-profile .leftSide {
+    padding-left: 3%;
+}
+
+#user-profile .rightSide .profile-detail {
+    margin-right: 5%;
+    margin-left: 5%;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    height: 500px;
+    border-radius: 52px;
+    background-color: #4460DB;
+}
+
+#user-profile .username,
+#user-profile .name,
+#user-profile .email,
+#user-profile .surname {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #A8A8A8;
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+#user-profile .content {
+    padding: 3% 9% 0 9%;
+}
+
+    #user-profile .content .header {
+        margin-bottom: 8%;
+    }
+
+#user-profile .username p,
+#user-profile .surname p,
+#user-profile .name p,
+#user-profile .email p {
+    margin: 0;
+}
+
+
+
+
+
+#user-profile #password input, #user-profile #security input {
+    width: 100%;
+    border-radius: 20px;
+    border: 0;
+}
+/* #user-profile .save-btn{
+    width: 100px;
+    border: 0.5px solid #98B0FF;
+    justify-content: center;
+    border-radius: 28px;
+    text-align: center;
+} */
+#user-profile .save-btn {
+    text-align: -webkit-right;
+    padding-top: 5%;
+}
+
+#user-profile .save {
+    border: 0.5px solid #98B0FF;
+    width: 90px;
+    text-align: center;
+    border-radius: 28px;
+}
+
+#user-profile .save-btn a {
+    color: white;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1000px) {
+    #user-profile li {
+        color: white;
+        list-style-type: none;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 60.43px;
+    }
+
+    #user-profile .rightSide .profile-detail {
+        margin-right: 10%;
+        margin-left: 5%;
+        color: white;
+        font-size: 18,i900--px;
+        font-weight: 400;
+        height: 500px;
+        border-radius: 52px;
+    }
+}
+/*End User Profile */
+
+
+#register-successful {
+    padding: 3% 0 5% 0;
+}
+
+    #register-successful p {
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        font-family: "Century Gothic";
+    }
+
+#confirm-email {
+    padding: 3% 0 5% 0;
+}
+
+    #confirm-email p {
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        font-family: "Century Gothic";
+    }
